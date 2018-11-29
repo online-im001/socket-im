@@ -6,13 +6,15 @@
  
 <template>
   <div id="app">
-    <LayoutContainer></LayoutContainer>
+    <!-- <LayoutContainer></LayoutContainer> -->
+    <MainWin></MainWin>
     <router-view/>
   </div>
 </template>
 
 <script>
-import LayoutContainer from './common/layout-container'
+// import LayoutContainer from './common/layout-container'
+import MainWin from './common/main-win'
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
   },
 
   components: {
-    LayoutContainer
+    // LayoutContainer
+    MainWin
   }
 }
 </script>
