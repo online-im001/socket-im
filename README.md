@@ -1,4 +1,3 @@
 # socket-im
-the web im
-Notice:
-  DFM is the FrontEnd project address.
+There are two branches:
+`im-server` and `im-client`, corresponding to front-end and back-end projects
