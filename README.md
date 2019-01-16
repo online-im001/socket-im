@@ -1,5 +1,6 @@
 # socket-im
 
+This is a front-end project named `im-client`, which based on `vue-cli3` `element-ui` and `less`
 ## Project setup
 ```
 npm install
@@ -27,3 +28,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+If you want to Build this project from scratch, try to run the following commands:
+
+```
+vue create my-project
+npm install
+npm i element-ui -S
+npm i -g less
+npm i --save-dev less-loader less
+npm run serve
+```
