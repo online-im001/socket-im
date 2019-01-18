@@ -3,17 +3,43 @@
       <!-- <router-link to="/">Home</router-link> | -->
       <!-- <router-link to="/about">About</router-link> -->
       <el-container>
-        <div class="nav-bar">nav</div>
-        <div class="user-bar">user-bar</div>
+        <NavBar class="nav-bar"></NavBar>
+        <UserBar class="user-bar"></UserBar>
         <div class="chat-window">
-          <div class="title">title</div>
-          <div class="chat">chat-window</div>
-          <div class="input">input-box</div>
+          <Title class="title"></Title>
+          <div class="chat">
+
+          </div>
+          <InputBox class="input-box">
+          </InputBox>
         </div>
       </el-container>
     <!-- <router-view/> -->
   </div>
 </template>
+
+<script>
+import UserBar from './components/common/user-bar'
+import InputBox from './components/common/input-box'
+import NavBar from './components/common/nav-bar'
+import Title from './components/common/title'
+
+export default {
+  data() {
+    return {
+
+    }
+  },
+
+  components: {
+    UserBar,
+    InputBox,
+    NavBar,
+    Title
+  }
+}
+</script>
+
 
 <style lang="less">
 #app {
@@ -26,33 +52,32 @@
   .el-container {
 
     .nav-bar {
-      width: 10%;
-      background: grey;
+      width: 8%;
+      background: #2b2929;
     }
     
     .user-bar {
-      width: 25%;
-      background: gainsboro;
+      width: 32%;
+      background: #f1efef;
     }
 
     .chat-window {
-      width: 65%;
+      width: 60%;
       height: 750px;
       text-align: center;
 
       .title {
         height: 60px;
-        background-color: #B3C0D1;
+        border-bottom: 1px solid gainsboro;
       }
 
       .chat {
         height: 530px;
-        background-color: white;
       }
 
-      .input {
+      .input-box {
         height: 160px;
-        background-color: #B3C0D1;
+        border-top: 1px solid gainsboro;
       }
     }
   }
